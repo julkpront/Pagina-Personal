@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Julián Muñoz</title>
+  <meta name="description" content="Proyectos de Julián Muñoz: Lilu, un asistente de IA local, e IAuditoring, un sistema de auditoría de llamadas con IA en producción.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="site-title">
+        <span class="status-dot" aria-hidden="true"></span>
+        Julián Muñoz
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biografia.html">Biografía</a></li>
+          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Proyectos</h1>
+      <p class="prose">Dos ejemplos de cómo aplico la automatización y la IA a problemas reales.</p>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h2>IAuditoring</h2>
+          <p class="role">Sistema de auditoría automática de llamadas con IA · en producción diaria</p>
+          <p>
+            Analiza llamadas de un call center para detectar intentos de evadir la
+            plataforma, transcribiendo y razonando sobre el audio con modelos de
+            lenguaje ejecutados 100% en local — sin enviar nada a servidores externos.
+          </p>
+          <ul class="tech-tags" aria-label="Tecnologías usadas">
+            <li>Python</li>
+            <li>faster-whisper</li>
+            <li>Ollama</li>
+            <li>FastAPI</li>
+            <li>SQLite</li>
+          </ul>
+
+          <div class="project-shots">
+            <figure>
+              <img src="img/iauditoring-resumen.png" alt="Panel de resumen de IAuditoring, mostrando llamadas analizadas y alertas" loading="lazy">
+              <figcaption>Resumen del día</figcaption>
+            </figure>
+            <figure>
+              <img src="img/iauditoring-alertas.png" alt="Panel de alertas confirmadas de IAuditoring con filtros por tipo y fecha" loading="lazy">
+              <figcaption>Alertas confirmadas</figcaption>
+            </figure>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn primary" href="https://github.com/julkpront/IAuditoring-showcase" target="_blank" rel="noopener">Ver repositorio</a>
+          </div>
+
+          <p class="extra-note">
+            El código fuente no es público por confidencialidad de la lógica de
+            negocio — el repositorio documenta arquitectura, decisiones de
+            ingeniería y resultados reales en producción.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h2>Lilu</h2>
+          <p class="role">Asistente de IA personal, 100% local y privado</p>
+          <p>
+            Un asistente conversacional inspirado en la idea de un Jarvis elegante,
+            que corre por completo en mi propio hardware: entiende voz e imágenes,
+            mantiene memoria persistente entre conversaciones, busca en la web
+            cuando lo necesita y puede generar imágenes — todo sin depender de
+            ningún servicio en la nube.
+          </p>
+          <ul class="tech-tags" aria-label="Tecnologías usadas">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>Ollama</li>
+            <li>faster-whisper</li>
+            <li>Kokoro TTS</li>
+            <li>visión (minicpm-v)</li>
+          </ul>
+
+          <div class="project-shots">
+            <figure>
+              <img src="img/lilu-interfaz.png" alt="Interfaz de chat de Lilu, con estado de sistema, memoria, búsqueda web, visión y voz activos" loading="lazy">
+              <figcaption>Interfaz de conversación</figcaption>
+            </figure>
+          </div>
+
+          <p class="extra-note">
+            Proyecto personal en desarrollo continuo, no público — nace de mi
+            interés por la autonomía técnica y la privacidad de los datos.
+          </p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Julián Muñoz.</p>
+  </footer>
+
+</body>
+</html>

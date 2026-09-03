@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Julián Muñoz</title>
+  <meta name="description" content="Contacta con Julián Muñoz.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="site-title">
+        <span class="status-dot" aria-hidden="true"></span>
+        Julián Muñoz
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biografia.html">Biografía</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">Contacto</p>
+      <h1>Hablemos</h1>
+      <p class="prose">¿Tienes un proyecto en mente o quieres saber más sobre mi trabajo? Escríbeme.</p>
+
+      <div class="contact-layout">
+        <form action="#" method="post">
+          <!-- Nota: formulario sin backend todavía — la lógica de envío llega con JavaScript ("Coming soon") -->
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            <span class="field-hint">Así sabré cómo dirigirme a ti.</span>
+          </div>
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="field-hint">Solo lo uso para responderte, nada más.</span>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <span class="field-hint">Cuéntame en qué estás pensando.</span>
+          </div>
+          <div class="cta-row">
+            <button type="submit" class="btn primary">Enviar mensaje</button>
+          </div>
+        </form>
+
+        <div class="contact-direct">
+          <h2>Contacto directo</h2>
+          <address>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=julklian2012@gmail.com" target="_blank" rel="noopener">julklian2012@gmail.com</a>
+            <a href="https://github.com/julkpront" target="_blank" rel="noopener">github.com/julkpront</a>
+            <a href="https://www.linkedin.com/in/juli%C3%A1n-mu%C3%B1oz-fern%C3%A1ndez-362a823b6" target="_blank" rel="noopener">linkedin.com/in/julián-muñoz-fernández</a>
+          </address>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Julián Muñoz.</p>
+  </footer>
+
+</body>
+</html>
